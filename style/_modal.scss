@@ -1,0 +1,79 @@
+/* Modals */
+.modal-header {
+  align-items: center;
+
+  .close {
+    font-size: 2rem;
+  }
+}
+
+.modal-footer {
+  background-color: #eff3f8
+}
+
+@import '~@mxjs/modal/index';
+
+.modal-prompt {
+  @media (min-width: $breakpoint-sm) {
+    .modal-dialog {
+      width: 400px;
+    }
+  }
+
+  .modal-content {
+    border: none;
+  }
+
+  .modal-header {
+    border-bottom: 0;
+    padding: $modal-prompt-padding $modal-prompt-padding 0 $modal-prompt-padding;
+  }
+
+  .modal-body {
+    padding: $modal-prompt-padding $modal-prompt-padding 0 $modal-prompt-padding;
+    font-size: 1.14285rem; // 16px
+
+    @at-root .modal-text {
+      min-height: 6rem; // 内容过少时也不会太扁
+    }
+  }
+
+  .modal-footer {
+    background: none;
+    border-top: 0;
+    padding: $modal-prompt-padding;
+
+    > :not(:last-child) {
+      margin-right: $modal-prompt-padding / 2;
+    }
+
+    > :not(:first-child) {
+      margin-left: $modal-prompt-padding / 2;
+    }
+  }
+}
+
+.modal-right {
+  .modal-dialog {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    display: flex;
+    min-height: 100%; // overflow scroll
+    width: calc(100% - 190px); // 190 = sidebar width
+    max-width: none;
+  }
+
+  &.fade .modal-dialog {
+    transform: translate3d(25%, 0, 0);
+  }
+
+  &.show .modal-dialog {
+    transform: none;
+  }
+
+  .modal-content {
+    border-width: 0;
+    border-radius: 0;
+  }
+}
