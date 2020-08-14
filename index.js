@@ -140,7 +140,7 @@ function confirm(config) {
   let cancel;
   let callback;
   const result = new Promise(resolve => {
-    callback = resolve
+    callback = resolve;
   });
   result.ok = fn => {
     ok = fn;
@@ -220,7 +220,7 @@ confirm.alert = (config) => {
   return confirm({
     okCancel: false,
     ...config,
-  })
+  });
 };
 
 confirm.defaults = defaults;
