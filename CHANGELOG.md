@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/miaoxing/mxjs-modal/compare/v0.1.1...v0.1.2) (2021-03-12)
+
+
+### Bug Fixes
+
+* 更新前端包依赖 ([9c8b802](https://github.com/miaoxing/mxjs-modal/commit/9c8b80215a09edb7af1dc0ab3d4d1bd7902ce400))
+
 ## [0.1.1](https://github.com/miaoxing/mxjs-modal/compare/v0.1.0...v0.1.1) (2021-03-05)
 
 
