@@ -2,9 +2,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Button, Modal} from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 class ActionButton extends React.Component {
   timeoutId;
+
+  static propTypes = {
+    autoFocus: PropTypes.bool,
+    closeModal: PropTypes.func,
+    buttonProps: PropTypes.object,
+    type: PropTypes.string,
+    actionFn: PropTypes.func,
+    children: PropTypes.node,
+  };
 
   constructor(props) {
     super(props);
@@ -15,6 +25,7 @@ class ActionButton extends React.Component {
 
   componentDidMount() {
     if (this.props.autoFocus) {
+      /* eslint-disable-next-line react/no-find-dom-node */
       const $this = ReactDOM.findDOMNode(this);
       this.timeoutId = setTimeout(() => $this.focus());
     }
@@ -124,6 +135,24 @@ const ConfirmDialog = (props) => {
       </Modal.Footer>
     </Modal>
   );
+};
+
+ConfirmDialog.propTypes = {
+  title: PropTypes.string,
+  okType: PropTypes.string,
+  okText: PropTypes.string,
+  cancelText: PropTypes.string,
+  okCancel: PropTypes.bool,
+  autoFocusButton: PropTypes.string,
+  centered: PropTypes.bool,
+  html: PropTypes.bool,
+  content: PropTypes.node,
+  cancelButtonProps: PropTypes.object,
+  okButtonProps: PropTypes.object,
+  show: PropTypes.bool,
+  close: PropTypes.func,
+  onCancel: PropTypes.func,
+  onOk: PropTypes.func,
 };
 
 function confirm(config) {
