@@ -15,7 +15,7 @@
 
 .modal-zoom {
   transform: scale(0.8);
-  transition: all .15s linear;
+  transition: all 0.15s linear;
 
   &.show {
     transform: scale(1);
