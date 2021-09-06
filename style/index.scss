@@ -70,7 +70,7 @@
 
 .modal-prompt {
   @media (min-width: map-get($grid-breakpoints, "sm")) {
-    .modal-dialog {
+    .modal-dialog:not(.modal-sm):not(.modal-lg):not(.modal-xl) {
       width: 400px;
     }
   }
