@@ -95,11 +95,11 @@
     padding: $modal-prompt-padding;
 
     > :not(:last-child) {
-      margin-right: $modal-prompt-padding / 2;
+      margin-right: $modal-prompt-padding * 0.5;
     }
 
     > :not(:first-child) {
-      margin-left: $modal-prompt-padding / 2;
+      margin-left: $modal-prompt-padding * 0.5;
     }
   }
 }
@@ -115,7 +115,7 @@
     }
 
     .modal-header {
-      padding: $modal-prompt-padding/2 $modal-prompt-padding;
+      padding: $modal-prompt-padding*0.5 $modal-prompt-padding;
     }
 
     .modal-body {
