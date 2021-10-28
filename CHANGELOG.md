@@ -1,3 +1,28 @@
+# [0.2.0](https://github.com/miaoxing/mxjs-modal/compare/v0.1.4...v0.2.0) (2021-10-28)
+
+
+### Bug Fixes
+
+* **modal:** 如果弹出框指定了大小，则不限制宽度 ([cf5cad6](https://github.com/miaoxing/mxjs-modal/commit/cf5cad6b1590eececda94c4cac637dba5561e20a))
+
+
+### Features
+
+* `react` 依赖移到 `peerDependencies` 中，开发依赖使用 `react` 17 ([9ef3f26](https://github.com/miaoxing/mxjs-modal/commit/9ef3f26f316f1284c982093cf5b4fa250219aa9e))
+
+
+### BREAKING CHANGES
+
+* `react` 依赖移到 `peerDependencies` 中，开发依赖使用 `react` 17
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `7.0.1` to `8.0.0`
+
 ## [0.1.4](https://github.com/miaoxing/mxjs-modal/compare/v0.1.3...v0.1.4) (2021-05-12)
 
 
