@@ -1,3 +1,10 @@
+## [0.2.13](https://github.com/miaoxing/mxjs-modal/compare/v0.2.12...v0.2.13) (2024-01-31)
+
+
+### Features
+
+* 更新 `react` 支持 18 ([5581473](https://github.com/miaoxing/mxjs-modal/commit/55814734db855c7259504786dde3b7856143ddf6))
+
 ## [0.2.12](https://github.com/miaoxing/mxjs-modal/compare/v0.2.11...v0.2.12) (2024-01-08)
 
 
